@@ -1,0 +1,99 @@
+LOOKINGIN PROPRIETARY END USER LICENSE AGREEMENT
+
+Effective date: August 16, 2026
+
+Copyright (c) 2026 LookingIN97. All rights reserved.
+
+This End User License Agreement ("Agreement") governs your use of the
+LookingIN software and the files distributed with it (collectively, the
+"Software"). By downloading, installing, copying, or using the Software, you
+agree to this Agreement. If you do not agree, do not use the Software.
+
+1. License Grant
+
+Subject to this Agreement, LookingIN97 (the "Licensor") grants you a limited,
+personal, non-exclusive, non-transferable, non-sublicensable license to
+download, install, and use the Software for non-commercial purposes on devices
+you own or control, solely with a lawfully acquired copy of The Bazaar. You may
+make copies only as reasonably necessary for that permitted use and for backup.
+
+2. Restrictions
+
+Except where applicable law expressly permits the activity despite this
+restriction, you may not:
+
+a. redistribute, publish, mirror, sublicense, sell, rent, lease, monetize, or
+   otherwise make the Software available to another person;
+b. modify, translate, adapt, or create derivative works of the Software;
+c. reverse engineer, decompile, disassemble, or otherwise attempt to derive
+   source code, algorithms, protocols, keys, or non-public data from the
+   Software;
+d. bypass, disable, or interfere with update signatures, integrity checks,
+   technical limitations, or other protection measures;
+e. use the Software to cheat, automate gameplay, interfere with services or
+   other users, violate The Bazaar policies, or violate applicable law; or
+f. remove, obscure, or alter copyright, license, trademark, attribution, or
+   other proprietary notices.
+
+3. Ownership
+
+The Software is licensed, not sold. The Licensor retains all right, title, and
+interest in and to the Software, including all intellectual property rights not
+expressly granted by this Agreement. No right to the LookingIN name, logo, or
+other branding is granted.
+
+4. Third-Party Components
+
+The Software may include third-party components governed by separate license
+terms. Those components are identified in THIRD-PARTY-NOTICES.txt. Their
+license terms apply to them and prevail over this Agreement to the extent of
+any conflict. This Agreement does not restrict rights granted directly by a
+third-party license.
+
+5. Updates
+
+The Software may automatically check for, download, verify, and install
+updates. Updates may change, replace, or remove features and become part of the
+Software governed by this Agreement.
+
+6. No Affiliation
+
+LookingIN is an independent third-party project. It is not affiliated with,
+endorsed by, sponsored by, or supported by Tempo, The Bazaar, Unity, Microsoft,
+or their respective owners. All third-party names and trademarks belong to
+their respective owners.
+
+7. Termination
+
+This Agreement terminates automatically if you materially breach it. Upon
+termination, you must stop using the Software and delete all copies in your
+possession or control. Sections that by their nature should survive termination
+will survive, including ownership, disclaimers, and limitations of liability.
+
+8. Disclaimer of Warranty
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED
+"AS IS" AND "AS AVAILABLE," WITH ALL FAULTS AND WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT,
+ACCURACY, SECURITY, COMPATIBILITY, OR UNINTERRUPTED OPERATION. YOU USE THE
+SOFTWARE AT YOUR OWN RISK. MODIFICATIONS TO A GAME MAY CAUSE DATA LOSS,
+INSTABILITY, ACCOUNT ACTION, OR INCOMPATIBILITY AFTER GAME UPDATES.
+
+9. Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR WILL NOT BE
+LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, CONSEQUENTIAL, OR
+PUNITIVE DAMAGES, OR FOR LOSS OF DATA, PROFITS, REVENUE, GOODWILL, OR USE,
+ARISING FROM OR RELATED TO THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES. THE LICENSOR'S TOTAL LIABILITY ARISING FROM OR RELATED TO THE
+SOFTWARE WILL NOT EXCEED THE AMOUNT YOU PAID DIRECTLY TO THE LICENSOR FOR THE
+SOFTWARE DURING THE TWELVE MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM.
+
+10. Mandatory Rights
+
+Nothing in this Agreement excludes, limits, or waives rights or remedies that
+applicable law does not permit to be excluded, limited, or waived.
+
+Official distribution channel:
+https://github.com/LookingIN97/LookingIN-Distribution
