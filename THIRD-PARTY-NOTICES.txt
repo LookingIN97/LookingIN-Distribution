@@ -92,8 +92,8 @@ BazaarPlusPlus
 ======================================================================
 
 The native paired-tooltip geometry, native frame composition, adaptive content
-budget, and native item-preview loading sequence in LookingIN are informed by
-BazaarPlusPlus:
+budget, native item-preview loading sequence, and replay bootstrap architecture
+in LookingIN are informed by BazaarPlusPlus:
 
 https://github.com/BazaarPlusPlus/BazaarPlusPlus
 
