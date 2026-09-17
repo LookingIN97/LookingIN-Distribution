@@ -95,5 +95,50 @@ SOFTWARE DURING THE TWELVE MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM.
 Nothing in this Agreement excludes, limits, or waives rights or remedies that
 applicable law does not permit to be excluded, limited, or waived.
 
+11. Public Compute Integration and SDK Exception (September 17, 2026)
+
+The following SDK components are offered under the MIT License below instead
+of the proprietary restrictions of this Agreement: LookingIN.Compute.Client,
+LookingIN.Compute.Contracts (excluding ReleaseBinding*.cs), the sources under
+src/LookingIN.Compute.Client, the corresponding contract sources under
+src/LookingIN.Compute.Contracts, samples/LookingIN.Compute.Sample, and sdk
+documentation. The shared sources RuntimeCustomPvpReplaySchema.cs and
+RuntimeDamageCurveTarget.cs linked into these SDK assemblies are included in
+this exception. Third-party notices and licenses continue to apply.
+
+This exception does not license the simulator, worker implementation, embedded
+catalog or official plugin under MIT. Those components remain proprietary.
+Subject to this Agreement's permitted use, independent clients may invoke the
+worker through the documented public compute API without installing the
+official LookingIN plugin. Merely using the documented API does not give the
+Licensor ownership of an independently authored client. No permission to
+redistribute or modify the proprietary worker or its embedded data is granted
+by the SDK exception. Client authors must not imply official endorsement.
+
+The MIT License applies to the SDK itself without additional restrictions
+from this Agreement; it does not grant rights in a game, its data or services.
+
+MIT License (SDK components only)
+
+Copyright (c) 2026 LookingIN97
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
 Official distribution channel:
 https://github.com/LookingIN97/LookingIN-Distribution
