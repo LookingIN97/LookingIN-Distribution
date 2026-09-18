@@ -30,9 +30,29 @@ Existing automatic updaters continue to recognize this layout. Before changing
 an installation, the update flow verifies the signed update manifest and the
 SHA-256 digest of the downloaded package.
 
+The same Release also provides four optional standalone plugins for users who
+only want one feature:
+
+- **SanityCheck**: stash value and missed-PvE reminders
+- **LudicrousSpeed**: game-speed controls
+- **WitnessMe**: PvP build/combat recording and HTML reports, without prediction
+- **ThereYouAre**: PvP opponent watchlist reminders
+
+Each updates independently. Full LookingIN users do not need them; if both are
+installed, the standalone runtime stays dormant and only keeps its own update check.
+
 The DLLs under `sdk/` are **not player installation files**. Do not copy them
 into `BepInEx/plugins/LookingIN`, and do not manually launch the Worker or
 Updater executables.
+
+## Compliance and risk
+
+The Bazaar maintains an official [Mod Policy](https://www.playthebazaar.com/mod-policy).
+Some features of the main LookingIN plugin and LudicrousSpeed may not satisfy
+every clause of that policy. SanityCheck, WitnessMe, and ThereYouAre have a
+narrower feature scope, but all components are unofficial third-party software
+that has not been reviewed or endorsed by the game developer. Please read the
+policy and evaluate the risks before installing.
 
 ## Third-party development / Compute SDK
 
@@ -118,4 +138,3 @@ LookingIN is an independent third-party project. It is not affiliated with,
 endorsed by, sponsored by, or supported by Tempo, The Bazaar, Unity, Microsoft,
 or their respective owners. Third-party names and trademarks belong to their
 respective owners.
-

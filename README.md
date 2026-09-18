@@ -25,8 +25,25 @@ README.md
 现有自动更新器会继续识别这个布局。更新流程会先验证签名更新清单和下载包的
 SHA-256，再替换安装内容。
 
+同一 Release 还提供四个可选独立插件；只需要单项功能时再安装：
+
+- **SanityCheck**：背包价值与 PvE 遗漏提醒
+- **LudicrousSpeed**：游戏速度控制
+- **WitnessMe**：PvP 构筑、实战记录与 HTML 报告，不含预测
+- **ThereYouAre**：PvP 对手名单提醒
+
+四者均独立自动更新。已安装完整 LookingIN 时无需再装；若同时存在，独立运行时休眠，
+只保留自身更新检查。
+
 `sdk/` 下的 DLL **不是玩家安装文件**。请不要把它们复制到
 `BepInEx/plugins/LookingIN`，也不要手动双击 Worker 或 Updater。
+
+## 合规与风险
+
+The Bazaar 发布了官方 [Mod 政策](https://www.playthebazaar.com/mod-policy)。
+LookingIN 主插件及 LudicrousSpeed 的部分功能不一定符合该政策的所有条款。
+SanityCheck、WitnessMe 和 ThereYouAre 的功能范围相对较窄，但所有组件均为
+未经官方审查或认可的第三方软件。请在安装前自行阅读上述政策并评估风险。
 
 ## 二次开发 / Compute SDK
 
