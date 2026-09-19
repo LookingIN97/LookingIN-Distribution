@@ -30,13 +30,14 @@ Existing automatic updaters continue to recognize this layout. Before changing
 an installation, the update flow verifies the signed update manifest and the
 SHA-256 digest of the downloaded package.
 
-The same Release also provides four optional standalone plugins for users who
+The same Release also provides five optional standalone plugins for users who
 only want one feature:
 
 - **SanityCheck**: stash value and missed-PvE reminders
 - **LudicrousSpeed**: game-speed controls
 - **WitnessMe**: PvP build/combat recording and HTML reports, without prediction
 - **ThereYouAre**: PvP opponent watchlist reminders
+- **PremiumTextures**: fixes native monster item previews that can turn blank/white across runs
 
 Each updates independently. Full LookingIN users do not need them; if both are
 installed, the standalone runtime stays dormant and only keeps its own update check.
