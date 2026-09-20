@@ -31,10 +31,10 @@ SHA-256，再替换安装内容。
 - **LudicrousSpeed**：游戏速度控制
 - **WitnessMe**：PvP 构筑、实战记录与 HTML 报告，不含预测
 - **ThereYouAre**：PvP 对手名单提醒
-- **PremiumTextures**：修复跨局后野怪物品预览可能变白且不恢复的问题
+- **PremiumTextures**：修复跨局后野怪物品预览可能变白且不恢复的问题，并增强与主插件共存时的稳定性
 
-四者均独立自动更新。已安装完整 LookingIN 时无需再装；若同时存在，独立运行时休眠，
-只保留自身更新检查。
+五者均独立自动更新。PremiumTextures 可独立安装；与兼容的主插件同时存在时，会自动
+避让重复修复逻辑，避免重复 Hook 和潜在冲突。
 
 `sdk/` 下的 DLL **不是玩家安装文件**。请不要把它们复制到
 `BepInEx/plugins/LookingIN`，也不要手动双击 Worker 或 Updater。

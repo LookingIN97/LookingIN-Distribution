@@ -37,10 +37,11 @@ only want one feature:
 - **LudicrousSpeed**: game-speed controls
 - **WitnessMe**: PvP build/combat recording and HTML reports, without prediction
 - **ThereYouAre**: PvP opponent watchlist reminders
-- **PremiumTextures**: fixes native monster item previews that can turn blank/white across runs
+- **PremiumTextures**: fixes monster item previews that can turn blank/white across runs, with improved coexistence stability
 
-Each updates independently. Full LookingIN users do not need them; if both are
-installed, the standalone runtime stays dormant and only keeps its own update check.
+Each updates independently. PremiumTextures can be installed on its own; when a
+compatible primary plugin is also installed, duplicate repair hooks are yielded
+automatically to avoid redundant patching and potential conflicts.
 
 The DLLs under `sdk/` are **not player installation files**. Do not copy them
 into `BepInEx/plugins/LookingIN`, and do not manually launch the Worker or
