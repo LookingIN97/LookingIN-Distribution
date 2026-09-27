@@ -1,5 +1,9 @@
 # LookingIN Distribution
 
+<p align="center">
+  <img src="assets/branding/lookingin-logo-512.png" alt="LookingIN" width="192">
+</p>
+
 [简体中文](README.md) | **English**
 
 This is the official public distribution repository for LookingIN. It serves

@@ -1,5 +1,9 @@
 # LookingIN Distribution
 
+<p align="center">
+  <img src="assets/branding/lookingin-logo-512.png" alt="LookingIN" width="192">
+</p>
+
 **简体中文** | [English](README.en.md)
 
 LookingIN 的官方公共分发仓库。这里面向两类用户：
