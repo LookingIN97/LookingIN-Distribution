@@ -34,7 +34,7 @@ Existing automatic updaters continue to recognize this layout. Before changing
 an installation, the update flow verifies the signed update manifest and the
 SHA-256 digest of the downloaded package.
 
-The same Release also provides five optional standalone plugins for users who
+The same Release also provides six optional standalone plugins for users who
 only want one feature:
 
 - **SanityCheck**: stash value and missed-PvE reminders
@@ -42,6 +42,7 @@ only want one feature:
 - **WitnessMe**: PvP build/combat recording and HTML reports, without prediction
 - **ThereYouAre**: PvP opponent watchlist reminders
 - **PremiumTextures**: fixes monster item previews that can turn blank/white across runs, with improved coexistence stability
+- **FailFast**: a one-click abandon-run flag, disabled by default, without confirmation; dormant when a primary host or legacy surrender plugin is present
 
 Each updates independently. PremiumTextures can be installed on its own; when a
 compatible primary plugin is also installed, duplicate repair hooks are yielded
