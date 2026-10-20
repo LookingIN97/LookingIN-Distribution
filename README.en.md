@@ -9,7 +9,7 @@
 This is the official public distribution repository for LookingIN. It serves
 two audiences:
 
-- **Players** download and automatically update LookingIN through GitHub Releases.
+- **Players** install LookingIN from GitHub Releases. Public main-plugin updates initially prefer the Cloudflare mirror, fall back to GitHub, and remember a successful source. Optional plugins continue to update through GitHub.
 - **Third-party developers** use the public Compute SDK under `sdk/` to call the maintained computation runtime through a supported interface.
 
 > [!IMPORTANT]
@@ -20,7 +20,7 @@ two audiences:
 
 ## For players
 
-Install LookingIN from GitHub Releases. The player package deliberately keeps
+Choose the ZIP for your platform from the same GitHub Release. The Windows `win-x64` package keeps
 the historical four-file layout:
 
 ```text
@@ -34,7 +34,11 @@ Existing automatic updaters continue to recognize this layout. Before changing
 an installation, the update flow verifies the signed update manifest and the
 SHA-256 digest of the downloaded package.
 
-The same Release also provides six optional standalone plugins for users who
+Apple Silicon Macs (macOS 14+) use the `macos-arm64` ZIP. Install BPP Mac first and confirm the game starts, then quit the game and copy the entire extracted `LookingIN` folder into `BepInEx/plugins`. Run its `AllowRun.command` after the first installation or a manual upgrade. The Mac package includes native compute, updater and crypto binaries; copying only the DLL is insufficient. It is not Apple-notarized. Intel Macs and Rosetta are not supported.
+
+Three-part official Mac versions use a separate signed update feed: download and verify while playing, install after the game exits, and use the new version on the next launch. Older four-part test versions require one manual installation of an official package. Both platforms share the same rules and bundled data.
+
+The same Release also provides six optional Windows standalone plugins for users who
 only want one feature:
 
 - **SanityCheck**: stash value and missed-PvE reminders

@@ -8,7 +8,7 @@
 
 LookingIN 的官方公共分发仓库。这里面向两类用户：
 
-- **普通玩家**：从 GitHub Releases 获取和自动更新 LookingIN。
+- **普通玩家**：从 GitHub Releases 获取 LookingIN；公开主插件自动更新首次优先 Cloudflare 镜像，并以 GitHub 兜底，成功后记住可用源。独立插件仍从 GitHub 更新。
 - **二次开发者**：从 `sdk/` 获取公开 Compute SDK，并通过受支持的接口调用计算核心。
 
 > [!IMPORTANT]
@@ -17,7 +17,7 @@ LookingIN 的官方公共分发仓库。这里面向两类用户：
 
 ## 普通玩家
 
-请从 GitHub Releases 安装 LookingIN。玩家发布包继续保持历史四文件布局：
+请从同一个 GitHub Release 选择对应平台的 ZIP。Windows 使用 `win-x64` 包，继续保持历史四文件布局：
 
 ```text
 LookingIN.dll
@@ -29,7 +29,11 @@ README.md
 现有自动更新器会继续识别这个布局。更新流程会先验证签名更新清单和下载包的
 SHA-256，再替换安装内容。
 
-同一 Release 还提供六个可选独立插件；只需要单项功能时再安装：
+Apple Silicon Mac（macOS 14+）使用 `macos-arm64` 包。先安装 BPP Mac 并确认游戏能够启动，再退出游戏，把解压后的整个 `LookingIN` 文件夹复制到 `BepInEx/plugins`；首次或手动升级后运行文件夹中的 `AllowRun.command`。Mac 包含原生计算进程、更新器和加密库，不能只复制 DLL。目前没有 Apple 公证，Intel Mac / Rosetta 不在支持范围内。
+
+Mac 三段正式版本使用独立的平台更新清单，验证后下载，游戏退出后替换，下次启动生效。旧四段测试版需先手动安装一次正式包。Windows 与 Mac 共用规则和内置资源。
+
+同一 Release 还提供六个 Windows 可选独立插件；只需要单项功能时再安装：
 
 - **SanityCheck**：背包价值与 PvE 遗漏提醒
 - **LudicrousSpeed**：游戏速度控制
