@@ -8,7 +8,7 @@
 
 LookingIN 的官方公共分发仓库。这里面向两类用户：
 
-- **普通玩家**：从 GitHub Releases 获取 LookingIN；公开主插件自动更新首次优先 Cloudflare 镜像，并以 GitHub 兜底，成功后记住可用源。独立插件仍从 GitHub 更新。
+- **普通玩家**：从 GitHub Releases 获取 LookingIN；自动更新首次优先 Cloudflare 镜像，并以 GitHub 兜底，成功后记住可用源。
 - **二次开发者**：从 `sdk/` 获取公开 Compute SDK，并通过受支持的接口调用计算核心。
 
 > [!IMPORTANT]
@@ -17,7 +17,9 @@ LookingIN 的官方公共分发仓库。这里面向两类用户：
 
 ## 普通玩家
 
-请从同一个 GitHub Release 选择对应平台的 ZIP。Windows 使用 `win-x64` 包，继续保持历史四文件布局：
+先从 [Bazaar++（BPP）下载页](https://bazaarplusplus.com/download) 安装 BPP。BPP 会一并安装 BepInEx，无需手动安装 BepInEx；确认游戏能够启动后退出游戏，再安装 LookingIN。
+
+请从同一个 GitHub Release 选择对应平台的 LookingIN ZIP，解压后将整个 `LookingIN` 文件夹放入 `The Bazaar/BepInEx/plugins/`。Windows 使用 `win-x64` 包，继续保持历史四文件布局：
 
 ```text
 LookingIN.dll
@@ -29,21 +31,14 @@ README.md
 现有自动更新器会继续识别这个布局。更新流程会先验证签名更新清单和下载包的
 SHA-256，再替换安装内容。
 
-Apple Silicon Mac（macOS 14+）使用 `macos-arm64` 包。先安装 BPP Mac 并确认游戏能够启动，再退出游戏，把解压后的整个 `LookingIN` 文件夹复制到 `BepInEx/plugins`；首次或手动升级后运行文件夹中的 `AllowRun.command`。Mac 包含原生计算进程、更新器和加密库，不能只复制 DLL。目前没有 Apple 公证，Intel Mac / Rosetta 不在支持范围内。
+Apple Silicon Mac（macOS 14+）使用 `macos-arm64` 包；首次或手动升级后运行文件夹中的 `AllowRun.command`。Mac 包含原生计算进程、更新器和加密库，不能只复制 DLL。目前没有 Apple 公证，Intel Mac / Rosetta 不在支持范围内。
 
 Mac 三段正式版本使用独立的平台更新清单，验证后下载，游戏退出后替换，下次启动生效。旧四段测试版需先手动安装一次正式包。Windows 与 Mac 共用规则和内置资源。
 
-同一 Release 还提供六个 Windows 可选独立插件；只需要单项功能时再安装：
-
-- **SanityCheck**：背包价值与 PvE 遗漏提醒
-- **LudicrousSpeed**：游戏速度控制
-- **WitnessMe**：PvP 构筑、实战记录与 HTML 报告，不含预测
-- **ThereYouAre**：PvP 对手名单提醒
-- **PremiumTextures**：修复跨局后野怪物品预览可能变白且不恢复的问题，并增强与主插件共存时的稳定性
-- **FailFast**：默认关闭的一键放弃整局旗帜，无二次确认；主插件或旧版投降插件存在时休眠
-
-各插件均独立自动更新。PremiumTextures 可独立安装；与兼容的主插件同时存在时，会自动
-避让重复修复逻辑，避免重复 Hook 和潜在冲突。
+从 0.248.0 起仅提供 LookingIN 主包，不再分发或更新单项功能插件。背包提示、加速、
+实战报告、对手名单提醒和一键投降继续在主插件中维护。PremiumTextures 专属修复随其退役。
+旧单项插件不会自动
+卸载或迁移数据；改用主插件时，请退出游戏后移除旧插件目录，另行保留所需配置与报告。
 
 `sdk/` 下的 DLL **不是玩家安装文件**。请不要把它们复制到
 `BepInEx/plugins/LookingIN`，也不要手动双击 Worker 或 Updater。
@@ -51,9 +46,8 @@ Mac 三段正式版本使用独立的平台更新清单，验证后下载，游�
 ## 合规与风险
 
 The Bazaar 发布了官方 [Mod 政策](https://www.playthebazaar.com/mod-policy)。
-LookingIN 主插件及 LudicrousSpeed 的部分功能不一定符合该政策的所有条款。
-SanityCheck、WitnessMe 和 ThereYouAre 的功能范围相对较窄，但所有组件均为
-未经官方审查或认可的第三方软件。请在安装前自行阅读上述政策并评估风险。
+LookingIN 的部分功能不一定符合该政策的所有条款。本项目为未经官方审查或认可的
+第三方软件。请在安装前自行阅读上述政策并评估风险。
 
 ## 二次开发 / Compute SDK
 

@@ -9,7 +9,7 @@
 This is the official public distribution repository for LookingIN. It serves
 two audiences:
 
-- **Players** install LookingIN from GitHub Releases. Public main-plugin updates initially prefer the Cloudflare mirror, fall back to GitHub, and remember a successful source. Optional plugins continue to update through GitHub.
+- **Players** install LookingIN from GitHub Releases. Updates initially prefer the Cloudflare mirror, fall back to GitHub, and remember a successful source.
 - **Third-party developers** use the public Compute SDK under `sdk/` to call the maintained computation runtime through a supported interface.
 
 > [!IMPORTANT]
@@ -20,7 +20,9 @@ two audiences:
 
 ## For players
 
-Choose the ZIP for your platform from the same GitHub Release. The Windows `win-x64` package keeps
+First install Bazaar++ (BPP) from the [BPP download page](https://bazaarplusplus.com/download). BPP installs BepInEx for you, so there is no need to install BepInEx manually. Launch the game successfully once, then quit it before installing LookingIN.
+
+Choose the LookingIN ZIP for your platform from the same GitHub Release. Extract it and copy the entire `LookingIN` folder into `The Bazaar/BepInEx/plugins/`. The Windows `win-x64` package keeps
 the historical four-file layout:
 
 ```text
@@ -34,23 +36,17 @@ Existing automatic updaters continue to recognize this layout. Before changing
 an installation, the update flow verifies the signed update manifest and the
 SHA-256 digest of the downloaded package.
 
-Apple Silicon Macs (macOS 14+) use the `macos-arm64` ZIP. Install BPP Mac first and confirm the game starts, then quit the game and copy the entire extracted `LookingIN` folder into `BepInEx/plugins`. Run its `AllowRun.command` after the first installation or a manual upgrade. The Mac package includes native compute, updater and crypto binaries; copying only the DLL is insufficient. It is not Apple-notarized. Intel Macs and Rosetta are not supported.
+Apple Silicon Macs (macOS 14+) use the `macos-arm64` ZIP. Run its `AllowRun.command` after the first installation or a manual upgrade. The Mac package includes native compute, updater and crypto binaries; copying only the DLL is insufficient. It is not Apple-notarized. Intel Macs and Rosetta are not supported.
 
 Three-part official Mac versions use a separate signed update feed: download and verify while playing, install after the game exits, and use the new version on the next launch. Older four-part test versions require one manual installation of an official package. Both platforms share the same rules and bundled data.
 
-The same Release also provides six optional Windows standalone plugins for users who
-only want one feature:
-
-- **SanityCheck**: stash value and missed-PvE reminders
-- **LudicrousSpeed**: game-speed controls
-- **WitnessMe**: PvP build/combat recording and HTML reports, without prediction
-- **ThereYouAre**: PvP opponent watchlist reminders
-- **PremiumTextures**: fixes monster item previews that can turn blank/white across runs, with improved coexistence stability
-- **FailFast**: a one-click abandon-run flag, disabled by default, without confirmation; dormant when a primary host or legacy surrender plugin is present
-
-Each updates independently. PremiumTextures can be installed on its own; when a
-compatible primary plugin is also installed, duplicate repair hooks are yielded
-automatically to avoid redundant patching and potential conflicts.
+Starting with 0.248.0, releases provide only the main LookingIN packages.
+Single-feature plugins are no longer distributed or updated. Stash tips, speed
+controls, combat reports, watchlist reminders and the abandon-run action remain
+in LookingIN. The PremiumTextures-only repair is retired with that product.
+Old plugins and their data are not automatically
+removed or migrated. When switching to LookingIN, exit the game before removing
+old plugin directories, and retain any configuration or reports you need.
 
 The DLLs under `sdk/` are **not player installation files**. Do not copy them
 into `BepInEx/plugins/LookingIN`, and do not manually launch the Worker or
@@ -59,11 +55,9 @@ Updater executables.
 ## Compliance and risk
 
 The Bazaar maintains an official [Mod Policy](https://www.playthebazaar.com/mod-policy).
-Some features of the main LookingIN plugin and LudicrousSpeed may not satisfy
-every clause of that policy. SanityCheck, WitnessMe, and ThereYouAre have a
-narrower feature scope, but all components are unofficial third-party software
-that has not been reviewed or endorsed by the game developer. Please read the
-policy and evaluate the risks before installing.
+Some LookingIN features may not satisfy every clause of that policy. LookingIN
+is unofficial third-party software that has not been reviewed or endorsed by
+the game developer. Please read the policy and evaluate the risks before installing.
 
 ## Third-party development / Compute SDK
 
