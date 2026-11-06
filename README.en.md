@@ -40,6 +40,8 @@ Apple Silicon Macs (macOS 14+) use the `macos-arm64` ZIP. Run its `AllowRun.comm
 
 Three-part official Mac versions use a separate signed update feed: download and verify while playing, install after the game exits, and use the new version on the next launch. Older four-part test versions require one manual installation of an official package. Both platforms share the same rules and bundled data.
 
+Android (BPPLKI) is a separate host app, not a desktop ZIP. It loads the official *The Bazaar* already installed on your phone, so install the official game first. Get `BPPLKI-<version>.apk` from the [download page](https://looking1n.com/download/) or from the `android-v<version>` release in this repository, and install it over the existing app without uninstalling. The app tells you when a new version is out and points you to the download; it never installs silently. `android-latest` is only a pointer to the newest signed update record, not a download, and this repository's Latest release is always the desktop one.
+
 Starting with 0.248.0, releases provide only the main LookingIN packages.
 Single-feature plugins are no longer distributed or updated. Stash tips, speed
 controls, combat reports, watchlist reminders and the abandon-run action remain
