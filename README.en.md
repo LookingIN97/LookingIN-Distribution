@@ -4,6 +4,14 @@
   <img src="assets/branding/lookingin-logo-512.png" alt="LookingIN" width="192">
 </p>
 
+<p align="center">
+  <a href="https://github.com/LookingIN97/LookingIN-Distribution/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/LookingIN97/LookingIN-Distribution?style=flat-square&color=e8962e&labelColor=1f2328"></a>
+  <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Android-26b5c9?style=flat-square&labelColor=1f2328">
+  <img alt="BepInEx" src="https://img.shields.io/badge/BepInEx-5.x-26b5c9?style=flat-square&labelColor=1f2328">
+  <a href="https://bazaarplusplus.com/download"><img alt="Requires Bazaar++" src="https://img.shields.io/badge/requires-Bazaar%2B%2B-26b5c9?style=flat-square&labelColor=1f2328"></a>
+  <img alt="SDK license" src="https://img.shields.io/badge/SDK-MIT-e8962e?style=flat-square&labelColor=1f2328">
+</p>
+
 [简体中文](README.md) | **English**
 
 This is the official public distribution repository for LookingIN. It serves
