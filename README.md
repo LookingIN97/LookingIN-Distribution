@@ -16,7 +16,7 @@
 
 LookingIN 的官方公共分发仓库。这里面向两类用户：
 
-- **普通玩家**：从 GitHub Releases 获取 LookingIN；自动更新首次优先 Cloudflare 镜像，并以 GitHub 兜底，成功后记住可用源。
+- **普通玩家**：从 GitHub Releases 获取 LookingIN；自动更新每次优先 Cloudflare 镜像，没有新版本就结束，仅在该源失败时回退 GitHub。
 - **二次开发者**：从 `sdk/` 获取公开 Compute SDK，并通过受支持的接口调用计算核心。
 
 > [!IMPORTANT]

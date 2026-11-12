@@ -17,7 +17,7 @@
 This is the official public distribution repository for LookingIN. It serves
 two audiences:
 
-- **Players** install LookingIN from GitHub Releases. Updates initially prefer the Cloudflare mirror, fall back to GitHub, and remember a successful source.
+- **Players** install LookingIN from GitHub Releases. Updates always try the Cloudflare mirror first, stop if no update is available, and fall back to GitHub only if the mirror fails.
 - **Third-party developers** use the public Compute SDK under `sdk/` to call the maintained computation runtime through a supported interface.
 
 > [!IMPORTANT]
