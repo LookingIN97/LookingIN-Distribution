@@ -43,7 +43,7 @@ Apple Silicon Mac（macOS 14+）使用 `macos-arm64` 包；首次或手动升级
 
 Mac 三段正式版本使用独立的平台更新清单，验证后下载，游戏退出后替换，下次启动生效。旧四段测试版需先手动安装一次正式包。Windows 与 Mac 共用规则和内置资源。
 
-Android 版（BPPLKI）是独立的宿主 App，不是桌面 ZIP：它加载你手机上已安装的官方《The Bazaar》，所以请先安装官方游戏。从[官网下载页](https://looking1n.com/download/)或本仓库名为 `android-v<版本>` 的发行版获取 `BPPLKI-<版本>.apk`，直接覆盖安装，不要先卸载。App 会提醒新版并引导下载，不会静默安装；`android-latest` 只是指向最新签名更新记录的指针，不是下载，本仓库的 Latest 始终是桌面发行版。
+Android 版（BPPLKI）是独立的宿主 App，不是桌面 ZIP：它加载你手机上已安装的官方《The Bazaar》，所以请先安装官方游戏。从[官网下载页](https://looking1n.com/download/)或本仓库名为 `android-v<版本>` 的发行版获取 `BPPLKI-<版本>.apk`，直接覆盖安装，不要先卸载。第一次用 BPPLKI 启动时，游戏会在 App 自己的存储里再下载一份约 2 GB 的游戏内容，请连接网络并预留空间；之后不会重复下载，覆盖升级也会保留。App 会提醒新版并引导下载，不会静默安装；`android-latest` 只是指向最新签名更新记录的指针，不是下载，本仓库的 Latest 始终是桌面发行版。
 
 从 0.248.0 起仅提供 LookingIN 主包，不再分发或更新单项功能插件。背包提示、加速、
 实战报告、对手名单提醒和一键投降继续在主插件中维护。PremiumTextures 专属修复随其退役。
