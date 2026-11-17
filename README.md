@@ -66,6 +66,6 @@ Windows x64 requires BPP. Apple Silicon Mac requires macOS 14+ and BPP Mac; Inte
 
 ### Distribution and SDK notice
 
-Since November 17, 2026, this repository is a read-only announcement page. GitHub downloads, Releases, public SDK distribution, and Issues have been discontinued. Use the official website for downloads and version information; packages and updates are served by Cloudflare. Install the website download over your existing installation if an older version can no longer update automatically.
+Since November 17, 2026, this repository serves as a project overview and website entry point, not a software distribution channel. GitHub downloads, Releases, public SDK distribution, and Issues have been discontinued. Use the official website for downloads and version information; packages and updates are served by Cloudflare. Install the website download over your existing installation if an older version can no longer update automatically.
 
 Public LookingIN Compute SDK releases and support have ended. Previously released SDK versions retain their MIT license; this does not change the licenses of proprietary components or promise compatibility with future versions. See the website's [license information](https://looking1n.com/en/policies/#license).
